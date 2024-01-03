@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADX3+sAGg8RAEk1MADp19MAW01KAKKJdAAoI0MAzdHLAM7VzgCLgnsA1trUAJiYqgDi09EAGRAMANji7ADL08kAbWNoAOvc2gC7vrgAu7jBAIN4ggCOeWoA0dXPAKaMfgBoUkgAkpauANTa1QCAamIAl4JzAJmCcwDa3tgA5dXPAC0iHgDl1tIAHx1OAJ2GdgA9NqkAMSMhAD84RADo2NgAi3RlAKGHeQBQc5AA2uPwAEQ/oACNjaYAzdTNAKKOhQDJuLAAs6afAJiQnQB8gZUAMTU8ANXZ0wB/a10A19nTACgdGQDf0tAAlYFxANbd1gCEgpgAfmxpAJiasgCxuLEAloOAAC0iHwDX4esA59fWAJ6GdwCJjKQAMiYiANrk6wBCO6cAoYp6ACkhSQDax8IAo4p6AM3UzgDQ1M4AdWdkAHuAkwDR2NEAemZhAJeWpwDj0c4AmZitACgiIABBUWMAKyEdACwhHQCbm60AQjQxAC4iIADm19cAtrK7AObZ1ADq1tQAmoeEAC0hOADL08wAzNPMANvl7wDayMYAztTPAM7WzACljXsA2c3MAI18dgCuq6cAhH+IALvAygDU2NIAJxwYAODQzAB8a2gAJx4eAINrXwDV4OoAxs7HANPh7QDW4OoAmYiIAKCJeQA/VoUANSYkAJ+NfACFeXcA3OXwANzIvgCmjXwAJBgWACojWgB9Z10AlH9uAOHPygCWl6wA2NzWACokHwAuIR8AmZ+yAC4lIgCdhnoA6NnWAJuIgADa5O4AXU1QACkgSQCkjHoAj5KnAJB7bAB9f5MA09fRAHtqZwCXlacARjppAJeWqgCYl60AmZetAJiBdQA6NaIA0eHvAM/BxgAvJCAAoId1AJ2KfgC4vLgA2uTvAM3SzACMkaUA0NbPANHWzwAlGRIAjn1zAJN7bQCokH4AJBsYAKuxswCVmasAKB8bAJuargCZgnkAnINzAObU0gAtJCEAPDijAJ6GcwCbh38AjIudAKCHdgBAN6kAcWBdAMrRygDZ4+0A2uHwAEs3NQDb5PAAsJ6fAIx3awCljHwA2srHAKaNfwDS1tAApZB/AJN6awDU1tAAhoSAANnVzQDh0NAAmpWpAJiWrACYg3QA5tLNAJGFgwDU3ugALyIcAOXX0wCenKwALiMfABgRDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN281MBUeiM00hDlmmp97KhaXNYaVzAqwQHQ2xEuDJAGXUZdx0hw7bGG7RQxUrbgiqqnJYB2FGp55Lahd188svacPByEcAHV4QjOU0I4fYki/aE4DOnduwQ4ORxmho9OSZGcIQw5QDsDADsMOEY22Si5OTV7AwMDAwMDVE1+AugZjao9/kGWmKz6H0bMnL0yZdqRSoBCLnJ1a2AubxyNJMqV9tFUbyBSW1BgmsYHGxjESRCjOBLUFfm1TPGt6k2nKF668rJFbWIpZINZBVsu5KQnFmNnZ2dnZ2dnZ2SAgc1dGvnLaDbKioqKiiaLZXK+rP0aiJT1Pgoy3fALCOHBwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        rel="icon" type="image/x-icon">
+    <title>Trying Tailwind</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+</head>
+
+<body class="px-28" style="background-color: #3D3B40; color: #F8EDFF; font-family: 'Rubik Scribble', sans-serif;">
+    <h1 class="text-6xl text-center py-16">Refresh Me</h1>
+
+
+    <div class="click-button text-center">
+        <a onclick="refreshPage()"
+            class="group relative inline-block overflow-hidden border border-white px-8 py-3 focus:outline-none focus:ring"
+            href="">
+            <span
+                class="absolute inset-y-0 left-0 w-[2px] bg-white transition-all group-hover:w-full group-active:white"></span>
+
+            <span class="relative text-lg font-medium text-white transition-colors group-hover:text-black">
+                Click Here
+            </span>
+        </a>
+    </div>
+
+    <div class="ann">
+        <h1 id="ann" class="text-center text-4xl pt-10">Let's Go</h1>
+    </div>
+
+    <div class="playground flex flex-col md:flex-row py-28 w-full">
+        <div class="player-1-container w-full text-center">
+            <h3 class="text-xl py-7 md:py-5 text-center">Player 1</h3>
+            <div style="height: 350px;" class="dice-container px-3 text-center"><img id="player-1-dice" class="w-full h-full object-fill" src="" alt="Dice for player 1"></div>
+        </div>
+        <div class="player-2-container w-full text-center">
+            <h3 class="text-xl py-7 pt-12 md:py-5 text-center">Player 2</h3>
+            <div style="height: 350px;" class="dice-container px-3 text-center"><img id="player-2-dice" class="w-full h-full object-fill" src="" alt="Dice for player 2"></div>
+        </div>
+    </div>
+
+    
+
+<footer class="rounded-lg shadow m-4 pb-5">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://github.com/thepankajturan" class="hover:underline">thepankajturan</a>. All Rights Reserved.</span>
+</footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
